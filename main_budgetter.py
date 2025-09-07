@@ -23,7 +23,9 @@ class Budgetter():
         return [self.costs[x] for x in self.costs.keys()]
     
     def getFood(self):
-        return self.costs['food']
+        foodstuff =  self.costs['food']
+        print(foodstuff)
+        return foodstuff
     
 
 #hi whats up with you
