@@ -22,8 +22,9 @@ class Budgetter():
     def getSum(self):
         return [self.costs[x] for x in self.costs.keys()]
     
-    def getFood(self):
-        return self.costs['food']
+    #rents kinda important
+    def getRent(self):
+        return self.costs['rent']
     
 
 #hi whats up with you
