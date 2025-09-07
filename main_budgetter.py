@@ -16,17 +16,22 @@ class Budgetter():
         self.total_cash = total_cash
         self.costs = costs
     
+    def getCategories(self):
+        return [x for x in self.costs.keys()]
+    
+    def getSum(self):
+        return [self.costs[x] for x in self.costs.keys()]
+    
     def getFood(self):
         return self.costs['food']
     
-    def getSum(self):
-        return 
 
 #hi whats up with you
 if __name__ == "__main__":
     mycosts1: Costs = {'food' : 200, 'rent': 300, 'sharesies': 100, 'clothes': 50}
     myBudget = Budgetter(20, mycosts1)
     food_price = myBudget.getFood()
-    print(food_price)
+    cats = myBudget.getSum()
+    print(cats)
 
         
